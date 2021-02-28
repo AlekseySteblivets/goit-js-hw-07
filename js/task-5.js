@@ -13,5 +13,7 @@ console.log(nameLabelEl);
 
 inputEl.addEventListener('input', onInputChange);
 function onInputChange(event) {
-    nameLabelEl.textContent = event.currentTarget.value;
+    event.currentTarget.value !== ''
+        ? nameLabelEl.textContent = event.currentTarget.value
+        : nameLabelEl.textContent = 'незнакомец';
 };

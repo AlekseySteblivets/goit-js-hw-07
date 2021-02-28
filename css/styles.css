@@ -12,6 +12,10 @@ img {
   height: auto;
 }
 
+span {
+  font-size: 80%;
+}
+
 .image-item {
   display: flex;
   flex-wrap: wrap;
@@ -19,4 +23,17 @@ img {
   margin-left: 20px;
   margin-bottom: 15px;
   margin-top: 0px;
+}
+
+/* task-6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }
